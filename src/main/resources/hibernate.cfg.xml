@@ -1,0 +1,31 @@
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/films</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">dREAM1cACAO</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="ru.itis.darZam.models.Operator"/>
+        <mapping class="ru.itis.darZam.models.Actor"/>
+        <mapping class="ru.itis.darZam.models.Composer"/>
+        <mapping class="ru.itis.darZam.models.Country"/>
+        <mapping class="ru.itis.darZam.models.Director"/>
+        <mapping class="ru.itis.darZam.models.Editor"/>
+        <mapping class="ru.itis.darZam.models.Film"/>
+        <mapping class="ru.itis.darZam.models.Genre"/>
+        <mapping class="ru.itis.darZam.models.Screenwriter"/>
+        <mapping class="ru.itis.darZam.models.Painter"/>
+        <mapping class="ru.itis.darZam.models.Producer"/>
+        <mapping class="ru.itis.darZam.models.RatingKinopoisk"/>
+        <mapping class="ru.itis.darZam.models.RatingImdb"/>
+
+    </session-factory>
+
+</hibernate-configuration>

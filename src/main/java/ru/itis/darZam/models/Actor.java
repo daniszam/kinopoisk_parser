@@ -29,5 +29,4 @@ public class Actor {
 
 
     private String test2;
-
 }

@@ -28,7 +28,7 @@ public class Actor {
     private Set<Film> films;
 
 
-    private String test1;
+    private String test2;
 
 
 }

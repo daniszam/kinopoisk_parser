@@ -28,4 +28,6 @@ public class Actor {
     private Set<Film> films;
 
     private String master;
+
+    private String test_master;
 }

@@ -27,4 +27,5 @@ public class Actor {
     @ManyToMany(mappedBy = "actors")
     private Set<Film> films;
 
+    private String master;
 }
